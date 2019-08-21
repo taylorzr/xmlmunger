@@ -4,7 +4,6 @@ require './lib/xmlmunger/version'
 Gem::Specification.new do |s|
   s.name        = 'xmlmunger'
   s.version     = XMLMunger::VERSION
-  s.date        = Date.today.to_s
   s.summary     = 'Convert XML files into flat hashes with automatic naming via nested paths'
   s.description = %(XML files typically come in nested structures. For data extraction purposes,
     we frequently wish to have a flat hash instead. The naming then becomes tricky, because
@@ -19,6 +18,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/robertzk/xmlmunger'
 
   s.platform = Gem::Platform::RUBY
+  s.required_ruby_version = '>= 1.9.2'
   s.require_paths = %w[lib]
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
