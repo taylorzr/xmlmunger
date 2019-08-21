@@ -4,7 +4,6 @@ require './lib/xmlmunger/version'
 Gem::Specification.new do |s|
   s.name        = 'xmlmunger'
   s.version     = XMLMunger::VERSION
-  s.date        = Date.today.to_s
   s.summary     = 'Convert XML files into flat hashes with automatic naming via nested paths'
   s.description = %(XML files typically come in nested structures. For data extraction purposes,
     we frequently wish to have a flat hash instead. The naming then becomes tricky, because
